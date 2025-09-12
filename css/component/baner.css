@@ -1,0 +1,63 @@
+body {
+
+
+    font-family: shabnam;
+
+}
+
+
+.baner {
+    width: 100%;
+    height: 450px;
+    margin-top: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.baner .swiper {
+    border-radius: 10px;
+    width: 90%;
+    height: 90%;
+    position: relative;
+  
+}
+
+.baner .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #c0b6b6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.baner .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* bullets */
+.baner .swiper-pagination {
+    position: absolute;
+    bottom: -25px;
+   
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.baner .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: whitesmoke;
+    opacity: 1;
+}
+
+.baner .swiper-pagination-bullet-active {
+    background-color: #2b2b2b !important;
+}

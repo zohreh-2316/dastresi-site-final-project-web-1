@@ -1,0 +1,74 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: shabnam;
+
+}
+
+/* why-dastresi */
+.why-dastresi {
+    height: 292px;
+
+    padding: 10px;
+    margin-bottom: 120px;
+
+}
+
+/* h3 */
+.why-dastresi h3 {
+    width: 1248px;
+    height: 36px;
+    font-size: 24px;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    line-height: 36px;
+}
+
+/* because container */
+.because {
+    width: 1248px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+}
+
+/* each because-item */
+.because-item {
+    width: 312px;
+    height: 210px;
+
+    padding: 10px;
+    text-align: center;
+}
+
+/* images */
+.because-item img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 10px;
+}
+
+/* paragraphs */
+.because-item .text1 {
+    width: 223px;
+    height: 24px;
+    margin: 0 auto 5px auto;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.because-item .text2 {
+    width: 280px;
+    height: 56px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 28px;
+}

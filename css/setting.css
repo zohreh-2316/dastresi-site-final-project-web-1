@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.wraper {
+    width: 100%;
+}
+
+@font-face {
+    font-family: shabnam;
+    src: url(../fonts/Shabnam.woff);
+    src: url(../fonts/fontello.woff2);
+    src: url(../fonts/Shabnam-Bold-FD.woff);
+    src: url(../fonts/Shabnam-Medium-FD.woff);
+    src: url(../fonts/Shabnam-FD.woff);
+}
+
+:root {
+    --fontF: shabnam;
+}

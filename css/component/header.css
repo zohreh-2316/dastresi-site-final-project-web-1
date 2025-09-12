@@ -1,0 +1,713 @@
+/* ======= HEADER ======= */
+body {
+
+    font-family: shabnam;
+}
+
+.header {
+    position: fixed;
+    
+    top: 0;
+   
+    left: 0;
+   
+    width: 100%;
+
+   
+    z-index: 1000;
+   
+    background-color: #fff;
+  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+/* HEADER TOP */
+.header__top {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+.header__top__item {
+    width: 100%;
+    max-width: calc(100% - 60px);
+   
+    margin: 0 30px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+   
+}
+
+/* لوگو */
+.header__top__item .logo {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__top__item .logo img {
+    width: 96px;
+    height: 41px;
+}
+
+/* جستجو */
+.header__top__item .search {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.header__top__item .search__item {
+    width: 90%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #d8dde4;
+}
+
+.header__top__item .search__item input[type="search"] {
+    width: 90%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding-right: 10px;
+    background: transparent;
+    font-family: shabnam;
+    font-size: 16px;
+    color: #3b3b3b;
+}
+
+.header__top__item .search__item input[type="search"]::placeholder {
+    color: gray;
+}
+
+.header__top__item .search__item img {
+    padding-right: 10px;
+}
+
+/* درباره ما و بلاگ و ارتباط ما */
+.header__top__item .about {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    /* وسط چین عمودی */
+    justify-content: flex-start;
+    column-gap: 25px;
+}
+
+.header__top__item .about__link__item {
+    text-decoration: none;
+    font-family: var(--fontF);
+    font-size: 15px;
+    color: #2b2b2b;
+    opacity: .7;
+    transition: 200ms;
+}
+
+.header__top__item .about__link__item:hover {
+    opacity: 1;
+}
+
+/* سبد خرید و ورود */
+.header__top__item .login {
+    width: 20%;
+    display: flex;
+    column-gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* سبد خرید */
+.header__top__item .cart {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f7f2f2;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .1), 0 1px 2px rgba(0, 0, 0, .06);
+}
+
+.header__top__item .cart svg {
+    transition: 200ms;
+}
+
+.header__top__item .cart svg:hover path {
+    fill: #2c5282;
+}
+
+/* دکمه ورود */
+.header__top__item .signUp {
+    width: 100px;
+    height: 40px;
+    background: #0a5abd;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 35px;
+    transition: 200ms;
+}
+
+.header__top__item .signUp:hover {
+    background: darkblue;
+}
+
+.header__top__item .signUp a {
+    color: whitesmoke;
+    font-size: 14px;
+    font-family: shabnam;
+    text-decoration: none;
+}
+
+/* ======= HEADER MENU ======= */
+.header__menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 55px;
+}
+
+.header__menu__nav {
+    width: 100%;
+    max-width: calc(100% - 60px);
+   
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.header__menu__nav__item__link {
+    display: block;
+    padding: 0 10px;
+    line-height: 55px;
+    text-decoration: none;
+    font-family: shabnam;
+    font-size: 14px;
+    color: gray;
+    transition: color 100ms;
+}
+
+.header__menu__nav__item__link:hover {
+    color: crimson;
+    border-bottom: 3px solid crimson;
+}
+
+/* ======= COMMOB MENU ======= */
+.commob-wrapper {
+    position: relative;
+    display: inline;
+    font-family: var(--fontF);
+    color: rgba(0, 0, 0, .6);
+}
+
+
+.commob span {
+    text-align: right;
+    font-size: 12px;
+    color: #666;
+}
+
+.commob::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: -6px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid #666;
+}
+
+.commob:hover {
+    color: #FE5F55;
+}
+
+.commob:hover::after {
+    border-top-color: #FE5F55;
+}
+
+
+.subcommobmenu {
+    width: 400px;
+    height: 596px;
+    padding-top: 13px;
+}
+
+.item {
+    width: 300px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 10px;
+    box-sizing: border-box;
+    color: #666;
+    font-size: 12px;
+}
+
+.item a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+}
+
+
+
+.item.has-sub {
+    position: relative;
+}
+
+.has-sub:hover .submenu {
+    display: flex;
+}
+
+.item:hover {
+    background: rgba(0, 0, 0, .04);
+}
+
+.item:hover span,
+.submenu a:hover {
+    color: #2c5282;
+    background: rgba(0, 0, 0, .04);
+}
+
+
+
+
+
+/* دکمه commob */
+.commob-wrapper .commob {
+    width: 100%;
+    height: 56px;
+    background: none;
+    
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+    font-size: 14px;
+    position: relative;
+    padding: 0 25px 0 20px;
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+
+/* خط زیر commob هنگام hover */
+.commob:hover::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: calc(100% + 30px);
+    
+    height: 3px;
+    background: #FE5F55;
+}
+
+/* commobmenu */
+.commobmenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 330px;
+    height: 609px;
+    background: #fff;
+    display: none;
+    z-index: 10;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+
+.commob-wrapper:hover .commobmenu {
+    display: block;
+}
+
+
+
+
+
+
+/* span ها */
+.item span {
+    background: none;
+    display: inline-block;
+    height: 42px;
+    line-height: 42px;
+}
+
+/* آیکون > */
+.item i {
+    position: absolute;
+    left: 4px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    cursor: pointer;
+    color: #666;
+}
+
+
+/* زیرمنو */
+.submenu {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    margin: 0;
+    padding: 0;
+    width: 330px;
+    background: #fff;
+    display: none;
+    flex-direction: column;
+    border: none;
+    border-radius: 0;
+    box-sizing: border-box;
+}
+
+.submenu a {
+    height: 42px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    text-decoration: none;
+    color: #333;
+    border-bottom: none;
+    box-sizing: border-box;
+}
+
+/* نمایش زیرمنو */
+.has-sub:hover .submenu {
+    display: flex;
+}
+
+
+/* hover زیرمنو */
+.submenu a:hover {
+    background: rgba(0, 0, 0, .04);
+    color: #2c5282;
+}
+
+
+
+.commob {
+    width: 137px;
+    height: 56px;
+    background: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+    font-size: 14px;
+    position: relative;
+    padding: 0 10px;
+}
+
+
+
+
+/* cablemenu */
+.cablemenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 330px;
+    height: 336px;
+    background: #fff;
+    display: none;
+    z-index: 10;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+
+.commob-wrapper:hover .cablemenu {
+    display: block;
+}
+
+/* subcommobmenu */
+.subcablemenu {
+    width: 330px;
+    height: 336px;
+    padding-top: 13px;
+}
+
+.subjectmenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 330px;
+    height: 94px;
+    background: #fff;
+    display: none;
+    z-index: 10;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+
+.commob-wrapper:hover .subjectmenu {
+    display: block;
+}
+
+
+.subsubjectmenu {
+    width: 135px;
+    height: 53px;
+    padding-top: 13px;
+}
+
+.networkmenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 330px;
+    height: 180px;
+    background: #fff;
+    display: none;
+    z-index: 10;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+
+.commob-wrapper:hover .networkmenu {
+    display: block;
+}
+
+
+.subnetworkmenu {
+    width: 101px;
+    height: 56px;
+    padding-top: 13px;
+}
+
+
+
+.gameconsulmenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 330px;
+    height: 260px;
+    background: #fff;
+    display: none;
+    z-index: 10;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+
+.commob-wrapper:hover .gameconsulmenu {
+    display: block;
+}
+
+
+.subgameconsulmenu {
+    width: 183px;
+    height: 56px;
+    padding-top: 13px;
+}
+
+
+.homemenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 330px;
+    height: 351px;
+    background: #fff;
+    display: none;
+    z-index: 10;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+
+.commob-wrapper:hover .homemenu {
+    display: block;
+}
+
+
+.subhomemenu {
+    width: 159px;
+    height: 56px;
+    padding-top: 13px;
+}
+
+
+.header__menu__nav__item {
+    position: relative;
+}
+
+/* HEADERBRANDMENU */
+.brandheadermenu {
+    position: absolute;
+    top: 100%;
+    inset-inline-end: 0;
+    width: 1248px;
+    max-width: 100vw;
+    height: 260px;
+    background: #fff;
+    display: none;
+    z-index: 9999;
+    box-sizing: border-box;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+.commob-wrapper:hover .brandheadermenu {
+    display: block;
+}
+
+/* CATEGORY BRAND MENU */
+.categorybrandmenu {
+    width: 1248px;
+    height: 259px;
+    background: #fff;
+}
+
+.subcategorybrandmenu {
+    width: 1248px;
+    height: 216px;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+}
+
+/* CATBRAND ها کنار هم بدون فاصله */
+.catbrand {
+    width: 249px;
+    height: 216px;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    gap: 0;
+}
+
+.catbrand:first-child {
+    border-left: 1px solid #ccc;
+}
+
+/* آیتم‌های داخلی CATBRAND */
+.catitem {
+    width: 100%;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+    margin: 0;
+    background-color: #fff;
+    gap: 0;
+}
+
+.catitem a {
+    width: calc(100% - 61px);
+    text-decoration: none;
+    color: #666;
+    font-family: shabnam;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+}
+
+.catitem span {
+    display: inline-block;
+    width: 85px;
+    height: 18px;
+    line-height: 18px;
+    text-align: left;
+    font-size: 12px;
+    color: #666;
+    margin: 0;
+    padding: 0;
+}
+
+/* otherrandom */
+.otherrandom {
+    width: 1248px;
+    height: 43px;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border-top: 1px solid #ccc;
+ 
+}
+
+.otherrandom a {
+    width: 140px;
+    height: 30px;
+    color: #FE5F55;
+    font-family: shabnam;
+    font-size: 12px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: color 0.2s;
+}
+
+.otherrandom a i {
+
+    width: 12px;
+    height: 12px;
+    font-style: normal;
+    line-height: 12px;
+    transition: color 0.2s;
+}
+
+.otherrandom a:hover {
+    color: blue;
+}
+
+.otherrandom a:hover i {
+    color: blue;
+}
+
+
+.catitem:hover {
+    background-color: #f2f2f2;
+    
+}
+
+.catitem:hover a,
+.catitem:hover span {
+    color: #0a5abd;
+   
+}

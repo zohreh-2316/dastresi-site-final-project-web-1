@@ -1,0 +1,401 @@
+/* ریست اولیه */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: shabnam;
+    background-color: #f8fafc;
+    direction: rtl;
+
+}
+
+
+.second-slide {
+    position: relative;
+
+    width: 1280px;
+    height: 600px;
+    margin: 10px auto;
+    padding: 20px;
+    background: #e2e2e2;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    top: -70px;
+
+}
+
+.forthslide {
+    position: relative;
+   
+    width: 1248px;
+    height: 210px;
+    margin: 10px auto;
+    padding: 20px;
+
+    border-radius: 12px;
+    top: -70px;
+}
+
+.fifthslide {
+    position: relative;
+
+    width: 1280px;
+    height: 412px;
+    margin: 10px auto;
+    padding: 20px;
+    background: rgba(226, 226, 226, var(--bg-opacity));
+    border-radius: 12px;
+    box-shadow: none;
+    top: -70px;
+}
+
+
+/* اسلایدر */
+.swiper {
+    width: 95%;
+    height: 100%;
+
+}
+
+.swiper-wrapper {
+    display: flex;
+
+}
+
+/* کارت محصول */
+.product {
+    position: relative;
+    width: 240px;
+    height: 500px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.brand {
+    position: relative;
+    width: 190px;
+    height: 112px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+.article {
+    position: relative;
+    width: 296px;
+    height: 218px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.brand img {
+    width: 96px;
+    height: 96px;
+    display: block;
+    margin: 10px auto;
+}
+
+.article img {
+    width: 296px;
+    height: 146px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 12px;
+    margin-top: 0;
+}
+
+.product img {
+    width: 100%;
+    height: 220px;
+    display: block;
+    margin: 10px auto;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    padding: 10px;
+    flex: 1;
+}
+
+.article-info {
+    padding: 10px;
+    flex: 1;
+}
+
+.product-info span {
+    font-size: 12px;
+    color: #777;
+    display: block;
+}
+
+.product-info h3 {
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+    transition: color 0.3s ease;
+}
+
+
+.product:hover .product-info h3 {
+    color: #4f86ff;
+    /* رنگ آبی */
+}
+
+.article-info h3 {
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+}
+
+/* قیمت محصول */
+.price-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    gap: 5px;
+    padding: 15px;
+    border-top: 1px solid #eee;
+    border-top: none;
+    margin-bottom: 5px;
+}
+
+.price-slide .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+}
+
+.price-slide .currency {
+    font-size: 12px;
+    color: #555;
+}
+
+/* فلش‌ها روی کارت */
+.custom-prev,
+.custom-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 20;
+    /* روی کارت‌ها */
+    transition: 0.3s;
+}
+
+.custom-prev:hover,
+.custom-next:hover {
+    background-color: #f0f0f0;
+    color: #555;
+}
+
+.custom-prev {
+    left: 35px;
+  
+}
+
+.custom-next {
+    right: 35px;
+   
+}
+
+
+
+
+.custom-prev2,
+.custom-next2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 20;
+    /* روی کارت‌ها */
+    transition: 0.3s;
+}
+
+.custom-prev2:hover,
+.custom-next2:hover {
+    background-color: #f0f0f0;
+    color: #555;
+}
+
+.custom-prev2 {
+    left: 35px;
+
+ 
+}
+
+.custom-next2 {
+    right: 35px;
+   
+}
+
+/* فلش‌ها روی کارت */
+.custom-prev3,
+.custom-next3 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(20%);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 20;
+  
+    transition: 0.3s;
+}
+
+.custom-prev3:hover,
+.custom-next3:hover {
+    background-color: #f0f0f0;
+    color: #555;
+}
+
+.custom-prev3 {
+    left: 35px;
+
+  
+}
+
+.custom-next3 {
+    right: 35px;
+   
+}
+
+
+
+
+
+
+
+
+.exist-now {
+    margin-bottom: 20px;
+}
+
+.now {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.now-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #757575;
+}
+
+.now-link {
+    text-decoration: none;
+    font-size: 14px;
+    color: #4e5e60;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.now-link .arrow {
+    color: rgb(184, 186, 189);
+
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    color: #4e5e60;
+    display: inline-block;
+    padding: 3px;
+
+}
+
+.old-price-wrapper2 {
+    display: block;
+    height: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 5px;
+
+}
+
+.old-price2 {
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.38);
+    font-size: 14px;
+    text-align: left;
+}
+
+.new-price-wrapper2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.new-price2 {
+    color: #4f86ff;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 5px;
+    text-align: left;
+}
+
+.no-exit {
+
+    margin: left 50%;
+    text-align: center;
+    color: rgb(172, 77, 77);
+
+}
+
+.price-slide2 {
+    text-align: center;
+    margin-bottom: 27px;
+
+
+}

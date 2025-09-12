@@ -1,0 +1,104 @@
+body {
+    height: 200vh;
+    font-family: shabnam;
+    overflow-x: hidden;
+}
+
+
+
+.categori {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+
+
+    h1 {
+        font-family: shabnam;
+        font-size: 25px;
+        text-align: center;
+        width: fit-content;
+        margin: 25px auto;
+
+    }
+
+    .categori__slider {
+        width: 100%;
+
+        height: 315px;
+
+        .swiper {
+            width: 100%;
+
+            height: 100%;
+
+            position: relative;
+
+            overflow: visible;
+
+        }
+
+        .swiper-slide {
+            width: 185px;
+            height: 185px;
+            text-align: center;
+            font-size: 18px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+}
+
+
+
+
+
+.custom-prev4,
+.custom-next4 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-230%);
+    /* وسط کامل عمودی */
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 20;
+    transition: 0.3s;
+}
+
+.custom-prev4:hover,
+.custom-next4:hover {
+    background-color: #f0f0f0;
+    color: #555;
+}
+
+.custom-prev4 {
+    left: 10px;
+}
+
+
+.custom-next4 {
+    right: 10px;
+}
