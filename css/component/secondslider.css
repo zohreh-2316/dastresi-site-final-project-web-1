@@ -29,7 +29,7 @@ body {
 
 .forthslide {
     position: relative;
-   
+
     width: 1248px;
     height: 210px;
     margin: 10px auto;
@@ -51,6 +51,8 @@ body {
     box-shadow: none;
     top: -70px;
 }
+
+
 
 
 /* اسلایدر */
@@ -153,6 +155,12 @@ body {
     color: #333;
     margin-top: 5px;
     transition: color 0.3s ease;
+
+}
+
+.article-info h3:hover {
+    color: #4f86ff;
+    cursor: pointer;
 }
 
 
@@ -165,6 +173,7 @@ body {
     font-size: 14px;
     color: #333;
     margin-top: 5px;
+    text-align: center;
 }
 
 /* قیمت محصول */
@@ -221,12 +230,12 @@ body {
 
 .custom-prev {
     left: 35px;
-  
+
 }
 
 .custom-next {
     right: 35px;
-   
+
 }
 
 
@@ -262,12 +271,12 @@ body {
 .custom-prev2 {
     left: 35px;
 
- 
+
 }
 
 .custom-next2 {
     right: 35px;
-   
+
 }
 
 /* فلش‌ها روی کارت */
@@ -288,7 +297,7 @@ body {
     font-size: 16px;
     cursor: pointer;
     z-index: 20;
-  
+
     transition: 0.3s;
 }
 
@@ -301,12 +310,12 @@ body {
 .custom-prev3 {
     left: 35px;
 
-  
+
 }
 
 .custom-next3 {
     right: 35px;
-   
+
 }
 
 
