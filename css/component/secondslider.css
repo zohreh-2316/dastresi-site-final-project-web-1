@@ -158,10 +158,7 @@ body {
 
 }
 
-.article-info h3:hover {
-    color: #4f86ff;
-    cursor: pointer;
-}
+
 
 
 .product:hover .product-info h3 {
@@ -174,6 +171,11 @@ body {
     color: #333;
     margin-top: 5px;
     text-align: center;
+}
+
+.article-info h3:hover {
+    color: #4f86ff;
+    cursor: pointer;
 }
 
 /* قیمت محصول */
